@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+            border: 2px solid yellowgreen;
+            margin-top: 20px;
+        }
+
+        .logout-btn {
+            display: inline-block;
+            margin-top: 25\\px;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Welcome, <%= user.name %>
+        </h1>
+        <h3>
+            <%= user.email %>
+        </h3>
+        <img src="<%= user.imgUrl %>" alt="Profile">
+    </div>
+    <div class="my-5">
+        <a href="/" class="logout-btn">Logout</a>
+    </div>
+</body>
+
+</html>
