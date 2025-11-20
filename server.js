@@ -5,7 +5,7 @@ dotenv.config();
 import { connectdb } from "./Model/database.js";
 import userRouter from "./Routes/user.js";
 import contactRouter from "./Routes/contact.js";
-g
+
 const app = express();
 
 // Middlewares
