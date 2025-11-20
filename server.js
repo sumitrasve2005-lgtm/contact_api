@@ -19,6 +19,10 @@ connectdb();
 app.use("/api/user", userRouter);
 app.use("/api/contact", contactRouter);
 
+app.get("/", (req, res) => {
+  res.send("API is running... 😊  | Use /api/contact to get contacts");
+});
+
 
 // Start Server
 const port = process.env.PORT || 3000;
