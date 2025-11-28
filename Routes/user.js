@@ -6,8 +6,10 @@ const router = express.Router();
 
 router.post("/register", register);
 router.post("/login", login);
+
 router.get("/me", isAuthenticated, (req, res) => {
   res.json({ message: "Token verified!", user: req.user });
 });
 
 export default router;
+
