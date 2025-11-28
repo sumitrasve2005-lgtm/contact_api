@@ -9,5 +9,5 @@ const contactSchema = new mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
 });
 
-// Named export
+
 export const Contact = mongoose.model("Contact", contactSchema);
