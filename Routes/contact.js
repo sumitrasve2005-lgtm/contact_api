@@ -1,5 +1,5 @@
 import express from "express";
-import { newContact, getAllContacts, getContactById, updateContactById, deleteContactById } from "../Controllers/contact.js";
+import { newContact, getAllContacts, getContactById, updateContactById, deleteContactById } from "../Controllers/contactuser.js";
 import { isAuthenticated } from "../Middleware/Auth.js";
 
 const router = express.Router();
